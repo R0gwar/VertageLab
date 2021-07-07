@@ -22,6 +22,7 @@ struct ContentView: View {
                     .padding(.bottom, 20)
                     .foregroundColor(.black)
                     .keyboardType(.emailAddress)
+                    .disableAutocorrection(true)
                 SecureField("Password", text: $password)
                     .padding()
                     .background(lgColor.lightGreyColor)
